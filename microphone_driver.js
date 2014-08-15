@@ -5,7 +5,6 @@ var bone = require('bonescript');
 var Microphone = module.exports = function(pin) {
   Device.call(this);
   this.pin = pin || 'P9_40';
-  bone.pinMode("P9_40", b.INPUT);
 };
 util.inherits(Microphone, Device);
 
@@ -22,6 +21,10 @@ Microphone.prototype.init = function(config) {
       if (x.err) {
         return;
       }
+      
+      x.value = (x.value === 0) ? 1 : x.value;
+
+      x.value = Number((100 * x.value).toFixed(3));
       self.amplitude = x.value;
     });
   }, 50);
