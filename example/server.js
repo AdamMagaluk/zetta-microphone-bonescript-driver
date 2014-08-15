@@ -1,5 +1,5 @@
 var zetta = require('zetta');
-var Microhpone = require('../index');
+var Microphone = require('../index');
 
 zetta()
   .use(Microphone, 'P9_40')
