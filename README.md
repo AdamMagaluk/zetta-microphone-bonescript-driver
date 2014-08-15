@@ -1,32 +1,31 @@
-##Control an Piezo Buzzer using Zetta and bonescript!
+##Monitor a Micophone using Zetta and bonescript!
 
 ###Install
 
 ```
-$> npm install zetta-buzzer-bonescript-driver
+$> npm install zetta-microphone-bonescript-driver
 ```
 
 ###Usage
 
 ```
 var zetta = require('zetta');
-var Buzzer = require('zetta-buzzer-bonescript-driver');
+var Microphone = require('zetta-microphone-bonescript-driver');
 
 zetta()
-  .use(Buzzer)
+  .use(Microphone)
   .listen(1337)
 ```
 
-###Transitions
+### Hardware
 
-#####turn-on
+![Hookup Diagram](docs/hookup_diagram_bb.png)
 
-No arguments. Turns on the buzzers beeping mode.
+* [Beagle Bone](http://beagleboard.org/black)
+* [Electret Microphone](https://www.sparkfun.com/products/9964)
 
-#####turn-off
+###Streams
 
-No arguments. Turns off the beeping.
+#####amplitude
 
-#####beep
-
-No arguments. Beeps the buzzer once.
+Amplitude, relative to 0-1.8v
