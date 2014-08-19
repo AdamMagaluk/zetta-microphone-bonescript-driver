@@ -5,6 +5,7 @@ var bone = require('bonescript');
 var Microphone = module.exports = function(pin) {
   Device.call(this);
   this.pin = pin || 'P9_40';
+  bone.pinMode(this.pin, bone.INPUT);
 };
 util.inherits(Microphone, Device);
 
