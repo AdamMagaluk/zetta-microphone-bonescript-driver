@@ -12,7 +12,6 @@ util.inherits(Microphone, Device);
 
 Microphone.prototype.init = function(config) {
   config
-    .state('ready')
     .type('microphone')
     .name('Microphone')
     .monitor('volume');
