@@ -13,7 +13,7 @@ var zetta = require('zetta');
 var Microphone = require('zetta-microphone-bonescript-driver');
 Â
 zetta()
-  .use(Microphone)
+  .use(Microphone, 'P9_36')
   .listen(1337)
 ```
 
