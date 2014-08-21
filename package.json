@@ -1,6 +1,6 @@
 {
   "name": "zetta-microphone-bonescript-driver",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "Microphone bonescript driver for zetta",
   "main": "index.js",
   "scripts": {
