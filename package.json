@@ -1,6 +1,6 @@
 {
   "name": "zetta-microphone-bonescript-driver",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Microphone bonescript driver for zetta",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,9 @@
   "dependencies": {
     "zetta": "^0.5.0",
     "zetta-auto-scout": "^0.2.0",
-    "bonescript": "0.2.4"
+    "bonescript": "0.2.4",
+    "zetta-scout": "^0.3.0",
+    "zetta-device": "^0.3.0"
   },
   "bugs": {
     "url": "https://github.com/zettajs/zetta-microphone-bonescript-driver/issues"
@@ -24,7 +26,9 @@
   "directories": {
     "example": "example"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "zetta": "^0.11.0"
+  },
   "keywords": [
     "zetta",
     "beaglebone",
