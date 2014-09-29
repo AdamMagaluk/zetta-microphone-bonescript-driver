@@ -13,8 +13,6 @@
     "url": "https://github.com/zettajs/zetta-microphone-bonescript-driver.git"
   },
   "dependencies": {
-    "zetta": "^0.5.0",
-    "zetta-auto-scout": "^0.2.0",
     "bonescript": "0.2.4",
     "zetta-scout": "^0.3.0",
     "zetta-device": "^0.3.0"
