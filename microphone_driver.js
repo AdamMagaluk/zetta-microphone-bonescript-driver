@@ -4,9 +4,10 @@ var bone = require('bonescript');
 
 var SAMPLE_TIME = 100; // ms
 
-var Microphone = module.exports = function(pin) {
+var Microphone = module.exports = function(pin, interval) {
   Device.call(this);
   this.pin = pin || 'P9_36';
+  this.interval = interval || 25;
 };
 util.inherits(Microphone, Device);
 
@@ -51,7 +52,7 @@ Microphone.prototype.init = function(config) {
       }
     });
 
-  }, 25);
+  }, this.interval);
 
 };
 
